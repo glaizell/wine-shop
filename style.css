@@ -18,6 +18,11 @@ body {
   font-size: 1.6rem;
   /* overflow: hidden; */
 }
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem rgba(238, 82, 82, 0.5);
+}
 /* ==================HEADER=============== */
 
 header {
@@ -92,6 +97,7 @@ header {
   line-height: 1.6;
   margin-bottom: 3.2rem;
 }
+
 .btn:link,
 .btn:visited {
   font-size: 1.6rem;
@@ -150,6 +156,7 @@ header {
 /* ==================HOW IT WORKS================== */
 .how-it-works {
   padding: 9.6rem 0;
+  background-color: #fdeeee;
 }
 /* .how-it-works div div {
   padding: 9.6rem;
@@ -345,10 +352,176 @@ header {
 }
 
 /* ==================TESTIMONIALS================== */
+
+.testimonials-section {
+  background-color: #fdeeee;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.testimonials-container {
+  padding: 8.2rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 6rem;
+}
+
+.testimonials-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+.testimonials-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.testimonials-name {
+  font-size: 1.6rem;
+  color: #555;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 100%;
+  display: block;
+  height: 100%;
+  transition: all 0.3s;
+}
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+/* ==================feature================== */
+.feature {
+  margin: 9.6rem 0;
+}
+.feature-icon {
+  color: #ee5253;
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+  background-color: #fdeeee;
+}
+.feature-title {
+  font-size: 2.1rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
 /* ==================CALL TO ACTION================== */
+.cta-section {
+  padding: 9.6rem 0;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.015);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #ee5253, #f17575);
+
+  overflow: hidden;
+}
+.cta .heading-secondary {
+  color: #471919;
+  margin-bottom: 3.2rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.cta-text-box {
+  color: #471919;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(238, 82, 82, 0.212),
+      rgba(241, 117, 117, 0.068)
+    ),
+    url('/images/girl.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdeeee;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.cta-form input::placeholder {
+  color: #aaa;
+}
+.cta-form select {
+}
+.cta-form button {
+  align-self: end;
+  padding: 1.2rem;
+  background-color: #471919;
+  color: #fdeeee;
+}
+.btn {
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: none;
+  padding: 1.6rem 3.2rem;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem rgba(253, 238, 238, 0.5);
+}
 /* ==================PRICING================== */
 
 /* ==================FOOTER================== */
+
 /* ==================HELPER CLASS================== */
 .center-text {
   text-align: center;
