@@ -1,12 +1,8 @@
-document.getElementById('year').innerHTML = new Date().getFullYear();
-
 const h1 = document.querySelector('.heading-primary');
 
 ///////////////////////////////////////////////////////////
 // Set current year
-const yearEl = document.querySelector('.year');
-const currentYear = new Date().getFullYear();
-yearEl.textContent = currentYear;
+document.getElementById('year').innerHTML = new Date().getFullYear();
 
 ///////////////////////////////////////////////////////////
 // Make mobile navigation work
@@ -50,7 +46,7 @@ allLinks.forEach(function (link) {
 ///////////////////////////////////////////////////////////
 // Sticky navigation
 
-const sectionHeroEl = document.querySelector('.section-hero');
+const sectionHeroEl = document.querySelector('.hero-section');
 
 const obs = new IntersectionObserver(
   function (entries) {
